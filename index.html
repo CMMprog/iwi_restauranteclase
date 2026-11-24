@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verde Raíz | Alta Cocina Vegetal</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family:'Inter',sans-serif;
+        }
+
+        h1,h2,h3,h4{
+            font-family:'Playfair Display',serif;
+        }
+    </style>
+
+</head>
+
+<body class="bg-[#faf8f2] text-stone-900">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-md">
+
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+
+            <a href="#" class="text-2xl font-bold text-white">
+            🌱 Verde Raíz
+            </a>
+
+            <!-- Menú escritorio -->
+            <nav class="hidden md:flex gap-10 text-white text-sm uppercase tracking-wider">
+
+                <a href="#filosofia" class="hover:text-amber-300">
+                Filosofía
+                </a>
+
+                <a href="#carta" class="hover:text-amber-300">
+                Menú
+                </a>
+
+                <a href="#galeria" class="hover:text-amber-300">
+                Galería
+                </a>
+
+                <a href="#reservas" class="hover:text-amber-300">
+                Reservas
+                </a>
+
+            </nav>
+
+    <div class="flex items-center gap-3">
+
+    <a href="#reservas"
+    class="hidden md:block bg-amber-400 hover:bg-amber-300 text-black px-5 py-2 rounded-full font-semibold">
+    Reservar
+    </a>
+
+    <button
+    id="menuBtn"
+    class="md:hidden text-white">
+
+    <svg xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="2"
+    stroke="currentColor"
+    class="w-8 h-8">
+
+    <path stroke-linecap="round"
+    stroke-linejoin="round"
+    d="M4 6h16M4 12h16M4 18h16" />
+
+    </svg>
+
+    </button>
+
+    </div>
+
+    </div>
+
+    <!-- Menú móvil -->
+
+    <div
+    id="mobileMenu"
+    class="hidden md:hidden bg-black/95 backdrop-blur-xl">
+
+    <div class="flex flex-col text-center py-6 text-white">
+
+    <a href="#filosofia" class="py-4 border-b border-white/10">
+    Filosofía
+    </a>
+
+    <a href="#carta" class="py-4 border-b border-white/10">
+    Menú
+    </a>
+
+    <a href="#galeria" class="py-4 border-b border-white/10">
+    Galería
+    </a>
+
+    <a href="#reservas" class="py-4">
+    Reservas
+    </a>
+
+    </div>
+
+    </div>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="relative min-h-screen flex items-center justify-center">
+
+    <img
+    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=2000&q=80"
+    class="absolute inset-0 w-full h-full object-cover"
+    alt="Alta cocina vegana">
+
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-emerald-950/70 to-black/60"></div>
+
+    <div class="relative z-10 text-center max-w-5xl px-6">
+
+    <p class="tracking-[0.3em] uppercase text-amber-300 mb-6">
+    Restaurante de Alta Cocina Vegetal
+    </p>
+
+    <h1 class="text-5xl md:text-7xl xl:text-8xl font-bold text-white leading-tight mb-6">
+    Naturaleza convertida
+    <br>
+    en arte gastronómico
+    </h1>
+
+    <p class="text-xl md:text-2xl text-stone-200 max-w-3xl mx-auto mb-10">
+    Una experiencia culinaria basada en producto ecológico,
+    temporada y creatividad vegetal.
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-4">
+
+    <a href="#reservas"
+    class="bg-amber-400 text-black px-8 py-4 rounded-xl font-semibold hover:scale-105 transition">
+
+    Reservar Experiencia
+
+    </a>
+
+    <a href="#carta"
+    class="border border-white/40 text-white px-8 py-4 rounded-xl hover:bg-white/10 transition">
+
+    Ver Menú
+
+    </a>
+
+    </div>
+
+    </div>
+
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+
+    <section class="py-16 bg-white">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+    <div class="grid md:grid-cols-4 gap-10 text-center">
+
+    <div>
+    <h3 class="text-5xl font-bold text-emerald-800">100%</h3>
+    <p class="text-stone-600 mt-2">Plant Based</p>
+    </div>
+
+    <div>
+    <h3 class="text-5xl font-bold text-emerald-800">15k+</h3>
+    <p class="text-stone-600 mt-2">Clientes</p>
+    </div>
+
+    <div>
+    <h3 class="text-5xl font-bold text-emerald-800">32</h3>
+    <p class="text-stone-600 mt-2">Productores Locales</p>
+    </div>
+
+    <div>
+    <h3 class="text-5xl font-bold text-emerald-800">4.9★</h3>
+    <p class="text-stone-600 mt-2">Valoración Media</p>
+    </div>
+
+    </div>
+
+    </div>
+
+    </section>
+
+    <!-- FILOSOFÍA -->
+
+    <section id="filosofia" class="py-24">
+
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+
+    <div>
+
+    <span class="text-amber-600 font-semibold uppercase tracking-widest">
+    Nuestra Filosofía
+    </span>
+
+    <h2 class="text-5xl mt-4 mb-8">
+    Del campo al plato
+    </h2>
+
+    <p class="text-lg text-stone-600 leading-relaxed mb-6">
+    Cada mañana seleccionamos ingredientes ecológicos de pequeños productores
+    de la sierra madrileña.
+    La carta evoluciona constantemente siguiendo el ritmo de las estaciones.
+    </p>
+
+    <ul class="space-y-4 text-stone-700">
+
+    <li>✓ Producto ecológico certificado</li>
+    <li>✓ Menús degustación estacionales</li>
+    <li>✓ Vinos naturales seleccionados</li>
+    <li>✓ Cocina sostenible y responsable</li>
+
+    </ul>
+
+    </div>
+
+    <div>
+
+    <div class="bg-white shadow-xl rounded-3xl p-12 text-center">
+
+    <p class="uppercase tracking-widest text-amber-600 mb-4">
+    Menú Degustación
+    </p>
+
+    <h3 class="text-4xl font-bold mb-5">
+    Temporada Otoño
+    </h3>
+
+    <p class="text-stone-600 mb-8">
+    5 pases inspirados en productos de proximidad y técnicas contemporáneas.
+    </p>
+
+    <div class="text-6xl font-bold text-emerald-800">
+    34€
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </section>
+
+    <!-- MENÚ -->
+
+    <section id="carta" class="py-24 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+    <h2 class="text-5xl text-center mb-4">
+    Menú de Temporada
+    </h2>
+
+    <p class="text-center text-stone-600 mb-16">
+    Platos que representan nuestra identidad culinaria
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+    <!-- CARD 1 -->
+
+    <article class="bg-[#faf8f2] rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 transition">
+
+    <img
+    src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=80"
+    class="h-72 w-full object-cover"
+    alt="Tartar">
+
+    <div class="p-8">
+
+    <div class="flex justify-between mb-4">
+    <h3 class="text-2xl font-bold">
+    Tartar de Remolacha
+    </h3>
+
+    <span class="font-bold text-emerald-700">
+    13,50€
+    </span>
+
+    </div>
+
+    <p class="text-stone-600">
+    Crema ahumada de anacardos, brotes tiernos y aceite de eneldo.
+    </p>
+
+    </div>
+
+    </article>
+
+    <!-- CARD 2 -->
+
+    <article class="bg-[#faf8f2] rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 transition">
+
+    <img
+    src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1000&q=80"
+    class="h-72 w-full object-cover"
+    alt="Risotto">
+
+    <div class="p-8">
+
+    <div class="flex justify-between mb-4">
+
+    <h3 class="text-2xl font-bold">
+    Risotto de Setas
+    </h3>
+
+    <span class="font-bold text-emerald-700">
+    16€
+    </span>
+
+    </div>
+
+    <p class="text-stone-600">
+    Boletus, trufa negra y crema vegetal de almendra.
+    </p>
+
+    </div>
+
+    </article>
+
+    <!-- CARD 3 -->
+
+    <article class="bg-[#faf8f2] rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 transition">
+
+    <img
+    src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=1000&q=80"
+    class="h-72 w-full object-cover"
+    alt="Tacos">
+
+    <div class="p-8">
+
+    <div class="flex justify-between mb-4">
+
+    <h3 class="text-2xl font-bold">
+    Tacos de Jackfruit
+    </h3>
+
+    <span class="font-bold text-emerald-700">
+    14,50€
+    </span>
+
+    </div>
+
+    <p class="text-stone-600">
+    Yaca marinada, maíz azul y cebolla encurtida artesanal.
+    </p>
+
+    </div>
+
+    </article>
+
+    </div>
+
+    </div>
+
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="py-24 bg-[#faf8f2]">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-16">
+
+    <span class="text-amber-600 uppercase tracking-[0.3em] text-sm">
+    Galería
+    </span>
+
+    <h2 class="text-5xl mt-4">
+    Una experiencia para los sentidos
+    </h2>
+
+    <p class="text-stone-600 mt-4">
+    Descubre algunos de nuestros platos y espacios.
+    </p>
+
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-5">
+
+    <img
+    src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=80"
+    class="rounded-3xl h-80 w-full object-cover hover:scale-105 transition duration-700"
+    alt="Plato vegetariano">
+
+    <img
+    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80"
+    class="rounded-3xl h-80 w-full object-cover hover:scale-105 transition duration-700"
+    alt="Comida saludable">
+
+    <img
+    src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1000&q=80"
+    class="rounded-3xl h-80 w-full object-cover hover:scale-105 transition duration-700"
+    alt="Restaurante">
+
+    <img
+    src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80"
+    class="rounded-3xl h-80 w-full object-cover hover:scale-105 transition duration-700"
+    alt="Alta cocina">
+
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-5 mt-5">
+
+    <img
+    src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1000&q=80"
+    class="rounded-3xl h-72 w-full object-cover hover:scale-105 transition duration-700"
+    alt="Risotto">
+
+    <img
+    src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1000&q=80"
+    class="rounded-3xl h-72 w-full object-cover hover:scale-105 transition duration-700"
+    alt="Chef">
+
+    <img
+    src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80"
+    class="rounded-3xl h-72 w-full object-cover hover:scale-105 transition duration-700"
+    alt="Interior restaurante">
+
+    </div>
+
+    </div>
+
+    </section>
+
+    <!-- TESTIMONIOS -->
+
+    <section id="experiencia" class="py-24 bg-emerald-950 text-white">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-5xl text-center mb-16">
+    Experiencias Memorables
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+    <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl">
+
+    <div class="text-amber-300 text-xl mb-4">
+    ★★★★★
+    </div>
+
+    <p class="text-stone-200">
+    La mejor experiencia vegana que hemos probado en Madrid.
+    </p>
+
+    </div>
+
+    <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl">
+
+    <div class="text-amber-300 text-xl mb-4">
+    ★★★★★
+    </div>
+
+    <p class="text-stone-200">
+    Creatividad, técnica y producto local perfectamente ejecutados.
+    </p>
+
+    </div>
+
+    <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl">
+
+    <div class="text-amber-300 text-xl mb-4">
+    ★★★★★
+    </div>
+
+    <p class="text-stone-200">
+    Una propuesta gastronómica elegante, sostenible y sorprendente.
+    </p>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </section>
+
+    <!-- RESERVAS -->
+
+    <section id="reservas" class="py-24">
+
+    <div class="max-w-3xl mx-auto px-6">
+
+    <h2 class="text-5xl text-center mb-4">
+    Reserva tu mesa
+    </h2>
+
+    <p class="text-center text-stone-600 mb-12">
+    Martes a domingo · 13:00 a 23:30
+    </p>
+
+    <form class="bg-white shadow-2xl rounded-3xl p-10">
+
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+
+    <input
+    type="date"
+    class="border border-stone-200 rounded-xl p-4"
+    >
+
+    <select
+    class="border border-stone-200 rounded-xl p-4">
+
+    <option>2 Personas</option>
+    <option>4 Personas</option>
+    <option>6 Personas</option>
+    <option>8 Personas</option>
+
+    </select>
+
+    </div>
+
+    <input
+    type="text"
+    placeholder="Nombre completo"
+    class="w-full border border-stone-200 rounded-xl p-4 mb-6"
+    >
+
+    <input
+    type="email"
+    placeholder="Correo electrónico"
+    class="w-full border border-stone-200 rounded-xl p-4 mb-6"
+    >
+
+    <button
+    class="w-full bg-emerald-800 hover:bg-emerald-700 text-white py-4 rounded-xl font-semibold transition">
+
+    Solicitar Reserva
+
+    </button>
+
+    </form>
+
+    </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="bg-black text-stone-400 text-center py-10">
+
+    <h3 class="text-white text-2xl mb-3">
+    Verde Raíz
+    </h3>
+
+    <p>
+    Calle del Olivo 14 · Madrid
+    </p>
+
+    <p class="mt-2">
+    © 2026 Todos los derechos reservados
+    </p>
+
+    </footer>
+
+    <script>
+
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        });
+
+    </script>
+</body>
+</html>
